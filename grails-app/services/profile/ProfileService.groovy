@@ -150,6 +150,7 @@ class ProfileService {
 
     def loginSuccess(user) {
         if (user) {
+            user = User.findByEmail(user.email as String)
             user.setFailedLoginCount(0)
             user.setAccountLocked(false)
             if(!user.save()) {

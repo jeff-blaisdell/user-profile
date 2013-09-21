@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Create Account</title>
+    <title><g:message code="profile.registration.page.title" /></title>
     <meta name="layout" content="main">
 </head>
 <body>
@@ -9,18 +9,18 @@
 
 <g:if test="${emailSent}">
     <br/>
-    <g:message code='account.registration.email.sent'/>
+    <g:message code='profile.registration.email.sent'/>
 </g:if>
 <g:elseif test="${badRegistration}">
     <br/>
-    <g:message code='account.registration.bad'/>
+    <g:message code='profile.registration.bad'/>
 </g:elseif>
 <g:else>
     <section class="l-globalwidth">
         <div class="account-box">
             <div class="account-box">
                 <g:form id="account-form" name="account" action="register" method="post">
-                    <h3><g:message code="account.form.label" default="Create Account" /></h3>
+                    <h3><g:message code="profile.registration.form.label" default="Create Account" /></h3>
                     <fieldset>
                         <div class="form-group">
                             <label for="firstName">

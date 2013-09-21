@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta name="layout" content="main"/>
-    <title>Bravo</title>
+    <title><g:message code="browse.index.page.title" /></title>
 </head>
 <body>
 <main>

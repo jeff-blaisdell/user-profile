@@ -5,11 +5,13 @@ import org.springframework.security.core.GrantedAuthority
 
 class SecUser extends GrailsUser {
 
+    String email
     String firstName
     String lastName
 
     SecUser(String username, String password, boolean enabled, boolean accountNonExpired, boolean credentialsNonExpired, boolean accountNonLocked, Collection<GrantedAuthority> authorities, Object id, String firstName, String lastName) {
         super(username, password, enabled, accountNonExpired, credentialsNonExpired, accountNonLocked, authorities, id);
+        this.email = username;
         this.firstName = firstName;
         this.lastName = lastName;
     }

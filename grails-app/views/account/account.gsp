@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My Account</title>
-    <meta name="layout" content="main">
+    <meta name="layout" content="main"/>
+    <title><g:message code="profile.account.page.title" /></title>
 </head>
 <body>
 <main>
-    <p>This is the account page.</p>
+    <section class="l-globalwidth">
+        <p>Welcome to your account.</p>
+    </section>
 </main>
 </body>
 </html>

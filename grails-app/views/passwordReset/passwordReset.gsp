@@ -11,8 +11,8 @@
         <div class="box password-reset-box">
             <g:if test="${passwordResetVerifiedSuccess}">
                 <form id="password-reset-form" name="changePassword" action="${postUrl}" method="post">
-                    <h3><g:message code="password.reset.label" /></h3>
-                    <p class="lead"><g:message code="password.reset.instructions" /></p>
+                    <h3><g:message code="profile.passwordReset.form.label" /></h3>
+                    <p class="lead"><g:message code="profile.passwordReset.instructions" /></p>
                     <fieldset>
                         <div class="form-group">
                             <label for="password">
@@ -58,13 +58,13 @@
                 </form>
             </g:if>
             <g:elseif test="${passwordResetVerifiedFailure}">
-                <h3><g:message code="password.reset.label" /></h3>
-                <p class="lead"><g:message code="password.reset.verified.failure" /></p>
+                <h3><g:message code="profile.passwordReset.form.label" /></h3>
+                <p class="lead"><g:message code="profile.passwordReset.verification.failure" /></p>
             </g:elseif>
             <g:else>
                 <form id="password-reset-form" name="passwordReset" action="passwordReset" method="post">
-                    <h3><g:message code="password.reset.label" /></h3>
-                    <p class="lead"><g:message code="password.reset.instructions" /></p>
+                    <h3><g:message code="profile.passwordReset.form.label" /></h3>
+                    <p class="lead"><g:message code="profile.passwordReset.instructions" /></p>
                     <fieldset>
                         <div class="form-group">
                             <label for="email">
@@ -79,14 +79,14 @@
                         <g:if test="${passwordResetEmailFailure}">
                             <div class="alert alert-danger alert-dismissable">
                                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                                <g:message code="password.reset.email.failure" />
+                                <g:message code="profile.passwordReset.email.failure" />
                             </div>
                         </g:if>
 
                         <g:if test="${passwordResetEmailSuccess}">
                             <div class="alert alert-success alert-dismissable">
                                 <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                                <g:message code="password.reset.email.success" />
+                                <g:message code="profile.passwordReset.email.success" />
                             </div>
                         </g:if>
 

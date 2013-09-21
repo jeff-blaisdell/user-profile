@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Sign In</title>
+    <title><g:message code="profile.signIn.page.title" /></title>
     <meta name="layout" content="main">
 </head>
 <body>
@@ -9,7 +9,7 @@
     <section class="l-globalwidth">
         <div class="sign-box">
             <form id="signin-form" name="signin" action="${authUrl}" method="post">
-                <h3><g:message code="signin.form.label" default="Sign In" /></h3>
+                <h3><g:message code="profile.signIn.form.label" default="Sign In" /></h3>
                 <fieldset>
                     <div class="form-group">
                         <label for="j_username">
@@ -36,8 +36,8 @@
                     </g:if>
 
                     <div class="checkbox">
-                        <label for="rememberMe">
-                            <g:message code="user.rememberMe.label" default="Remember Me:" />
+                        <label for="rememberMeCheckBox">
+                            <g:message id="rememberMeCheckBox" code="user.rememberMe.label" default="Remember Me:" />
                         </label>
                         <g:checkBox name="${rememberMeParameter}" checked="${hasCookie}" />
                     </div>
@@ -48,7 +48,7 @@
                     </div>
                     <div class="form-group">
                         <g:link controller="registration" action="register">
-                            <input type="button" class="btn btn-default" value="Create Account"/>
+                            <input type="button" class="btn btn-default" value="${message(code: 'profile.signIn.registration.button')}"/>
                         </g:link>
                     </div>
                 </fieldset>
