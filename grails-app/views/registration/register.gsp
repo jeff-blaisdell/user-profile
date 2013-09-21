@@ -206,12 +206,15 @@
                             </g:hasErrors>
                         </div>
 
-                        <g:submitButton class="btn btn-default" name="update" value="Create Account" />
+                        <div class="form-group">
+                            <g:submitButton class="btn btn-primary" name="update" value="Create Account" />
+                        </div>
                     </fieldset>
                 </g:form>
             </div>
     </section>
 </g:else>
 </main>
+<g:javascript src="registration.js" />
 </body>
 </html>

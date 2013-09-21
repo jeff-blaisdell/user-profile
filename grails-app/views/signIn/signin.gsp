@@ -28,6 +28,14 @@
                         <g:field type="password" class="form-control" name="j_password" required="true" />
                     </div>
 
+                    <div class="form-group">
+                        <h6>
+                            <g:link controller="passwordReset" action="passwordReset">
+                                <g:message code="profile.signIn.forgot.password" />
+                            </g:link>
+                        </h6>
+                    </div>
+
                     <g:if test="${flash.message}">
                         <div class="alert alert-danger alert-dismissable">
                             <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
@@ -42,7 +50,10 @@
                         <g:checkBox name="${rememberMeParameter}" checked="${hasCookie}" />
                     </div>
 
-                    <g:submitButton class="btn btn-default" name="update" value="Sign In" />
+                    <div class="form-group">
+                        <g:submitButton class="btn btn-primary" name="update" value="Sign In" />
+                    </div>
+
                     <div class="form-group">
                         <facebookAuth:connect />
                     </div>

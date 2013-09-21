@@ -59,7 +59,6 @@ grails.project.dependency.resolution = {
         compile ":spring-social-facebook:0.1.32"
         compile ":mongodb:1.3.0"
         compile ":mail:1.0.1"
-        runtime ":jquery:1.8.3"
         runtime ":resources:1.1.6"
 
         // Uncomment these (or add new ones) to enable additional resources capabilities

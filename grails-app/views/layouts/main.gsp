@@ -19,7 +19,8 @@
             e.preventDefault(); // no page reload
         }
     </script>
-
+    <g:javascript src="require/2.1.8/require.js"/>
+    <g:javascript src="require.app.js"/>
     <g:layoutHead/>
     <r:layoutResources />
 </head>
@@ -42,7 +43,7 @@
     </nav>
 </section>
 <g:layoutBody/>
-<g:javascript library="app"/>
+<g:javascript src="main.js"/>
 <r:layoutResources />
 </body>
 </html>
