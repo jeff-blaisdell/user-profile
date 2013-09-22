@@ -33,8 +33,7 @@ class FacebookAuthService {
         def address = new Address()
         address.city = location.city
         address.state = location.state
-        address.location.lat = location.latitude
-        address.location.long = location.longitude
+        address.location = [lat: location.latitude, long: location.longitude]
         user.address = address
     }
 }

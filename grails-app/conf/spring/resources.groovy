@@ -1,5 +1,4 @@
 import profile.AuthFailureListener
-import profile.ProfileService
 import profile.AuthSuccessListener
 import org.springframework.security.web.authentication.SimpleUrlAuthenticationFailureHandler
 import org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler
@@ -7,8 +6,6 @@ import org.springframework.security.web.authentication.SimpleUrlAuthenticationSu
 // Place your Spring DSL code here
 beans = {
     userDetailsService(profile.CustomUserDetailsService)
-
-    profileService(ProfileService)
 
     redirectFailureHandlerExample(SimpleUrlAuthenticationFailureHandler) {
         defaultFailureUrl = '/failed' //redirect to this URL when authentication fails

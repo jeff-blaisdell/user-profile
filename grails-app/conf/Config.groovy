@@ -125,6 +125,7 @@ grails.plugins.springsecurity.facebook.filter.redirect.failureHandler='redirectF
 grails.plugins.springsecurity.facebook.filter.redirect.successHandler='redirectSuccessHandlerExample'
 grails.plugins.springsocial.facebook.clientId='514394148640546'
 grails.plugins.springsocial.facebook.clientSecret='e8f381273a740f99cde4509f38bc5a49'
+grails.plugins.springsecurity.facebook.taglib.button.img='/images/facebook-connect.png'
 
 user {
     register {
@@ -141,7 +142,7 @@ If you made the request, please click&nbsp;<a href="$url">here</a> to finish the
         postRegisterUrl = null // use defaultTargetUrl if not set
     }
 
-    forgotPassword {
+    passwordReset {
         emailBody = '''\
 Hi $user.firstName,<br/>
 <br/>

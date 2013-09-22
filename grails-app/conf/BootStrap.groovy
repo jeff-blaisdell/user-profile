@@ -11,8 +11,8 @@ class BootStrap {
         def facebookRole = Role.findByAuthority('ROLE_FACEBOOK') ?: new Role(authority: 'ROLE_FACEBOOK').save(failOnError: true)
         def adminRole = Role.findByAuthority('ROLE_ADMIN') ?: new Role(authority: 'ROLE_ADMIN').save(failOnError: true)
 
-        def adminUser = User.findByEmail('jeff.blaisdell@gmail.com') ?: new User(
-                email: 'jeff.blaisdell@gmail.com',
+        def adminUser = User.findByEmail('jeff.j.blaisdell@gmail.com') ?: new User(
+                email: 'jeff.j.blaisdell@gmail.com',
                 password: 'password',
                 firstName: 'Jeff',
                 lastName: 'Blaisdell',

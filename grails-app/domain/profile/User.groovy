@@ -26,7 +26,7 @@ class User {
 
     static constraints = {
         email blank:false, unique:true, maxSize:100
-        password blank:false, maxSize: 100
+        password blank:false, maxSize: 500
         firstName blank:false, maxSize:100
         lastName blank:false, maxSize:100
         birthDate blank:false, maxSize:100
@@ -46,10 +46,6 @@ class User {
         this.email = this.email.toLowerCase()
         this.enabled = true
         encodePassword()
-    }
-
-    def beforeUpdate() {
-
     }
 
     protected void encodePassword() {
