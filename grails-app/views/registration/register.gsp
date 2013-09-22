@@ -215,6 +215,6 @@
     </section>
 </g:else>
 </main>
-<g:javascript src="registration.js" />
 </body>
+<r:require modules="registration"/>
 </html>
